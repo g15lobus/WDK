@@ -1,13 +1,5 @@
 # -*- coding: utf-8 -*-
 #!/usr/bin/python
-
-from binascii import hexlify, unhexlify
-import re
-import sys
-import locale
-locale.setlocale(locale.LC_ALL, '')
- 
-
 def main():
     ciphertexts = ["56232e8cede71121d5b30365423401b094d57e59e982374d0f122ba50dc4587ec4436206874f21235a29667099d79e9e67052dfc8650fefdf865e867b99765ebc91bdb277b47663a5b4b",
 "5c769e79e7ef0f6fd2b903404d82f9bf8ec069bd0edb82bd551835a511c2566c8b52295adfabd9774c31c09a7a10df9d7d1d3ffb875eeab0b750459bb58a65f4c9169a1e675267325b16f9ee849d9732467de2ae9c81c78288a4156fba61a9ed94c751630dba651088673697259336e9b0",
