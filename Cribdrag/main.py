@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 #!/usr/bin/python
+import chunk
 def main():
     ciphertexts = ["56232e8cede71121d5b30365423401b094d57e59e982374d0f122ba50dc4587ec4436206874f21235a29667099d79e9e67052dfc8650fefdf865e867b99765ebc91bdb277b47663a5b4b",
 "5c769e79e7ef0f6fd2b903404d82f9bf8ec069bd0edb82bd551835a511c2566c8b52295adfabd9774c31c09a7a10df9d7d1d3ffb875eeab0b750459bb58a65f4c9169a1e675267325b16f9ee849d9732467de2ae9c81c78288a4156fba61a9ed94c751630dba651088673697259336e9b0",
@@ -13,6 +14,15 @@ def main():
 "452c8e7defa81126d9bc59594d2b12fdc76abb1cab8cd2bf46b9caf114c2136f8b520b47d20829775e3a7f61301b7b556caae2f6c94cf2e2b1575edea4de70f68a168fb38c0666394e09f9f4848787301c705c4ed1c9f29f2c450073b222b2f13422552c11bb620f9b301a8a3f8833efe48ba8437bccd20a79969628fc5b41a9e43611881d8c54f2446250fba029c4aa51650a21088b176c49262747acf9d12240d0999ba808a80dfd25c48751b2afda785d9f64d94bcfcbd0556bd9d85e35c0e5fa81f7e952b7da3b2a7438b86a5dde60bda8c526e5d6b376d0cb", 
 "452c8e7defa81c22d3b6575f5f2617b8c7d86e1ce790364a0f123fe00dca506120eb7515fd06257759216162331bd280244f34f68207f0e9bf5ee87bba9f20ed9b0d9504794970341e15f9fa9f87877d"]
 
+    def wrapped(text):
+        line_width = 40
+        text_len = len(text)
+        for chunk in xrange(0,text_len,line_width):
+            if chunk > text_len-line_width:
+                print str(chunk) + chr(9) + text[chunk:]
+            else:
+                print str(chunk) + chr(9) + text[chunk:chunk+line_width]
+    
     def stringxor(s1,s2):
         return ''.join(chr(ord(a) ^ ord(b)) for a,b in zip(s1,s2))
     
@@ -20,16 +30,29 @@ def main():
     s2 = ciphertexts[10].decode('hex')
     
     s3 = stringxor(s1, s2)
+
+    s3_len = len(s3)
+    display_cribtext = "*" * s3_len
     
     print s3.encode('hex')
     crib = ''
   
     while (crib != 'end'):
         crib = raw_input("Enter Crib:>")
+        crib_len = len(crib)
         for i in range(len(s3)):
             text = s3[i:]
             print ("\n[%d]")%i
             print ("%s")%stringxor(text,crib)
+        answer = raw_input("Please enter the correct position of message, 'brak' if text isn't exists or 'end' to quit") 
+        
+        if(answer == 'end'):
+            print "Your message is:" + display_cribtext
+        elif (answer =='brak')
+            print("Without changes")
+        else:
+            display_cribtext = display_cribtext[:answer] + crib + display_cribtext[answer+cirb_len:]
+            wrapped(display_cribtext)
             
 
 main()
