@@ -1,8 +1,15 @@
-Odszywrowana treœæ dodatkowego ci¹gu: 
-Czesi zmontowali wielk¹ operacjê. Nie widzieli, jak wygl¹da transport poczty.
+Odszywrowana treÅ›Ä‡ dodatkowego ciÄ…gu: 
+Czesi zmontowali wielkÄ… operacjÄ™. Nie widzieli, jak wyglÄ…da transport poczty.
 
+<<<<<<< HEAD
 Uda³o siê odszywrowaæ wszyskie ci¹gi w ca³oœci, ale tylko z tego wzglêdu, ¿e ich treœæ jest dostêpna 
 w internecie na jednym z portali(https://zaufanatrzeciastrona.pl/post/jak-czechoslowacki-kontrwywiad-wegierskich-szpiegow-za-nos-wodzil/), 
 przy pomocy google'a nie problem jest to znaleŸæ. Gdyby nie to, nie uda³o by siê rozszywrowaæ 
 wszystkich ci¹gów, ze wzglêdu na ich d³ugoœci. Problem pojawi³by siê w przypadku próby pe³nej 
 deszyfracji ci¹gu numer 10, gdy¿ jest on najd³u¿szy i nie jesteœmy w stanie nie u¿ywaj¹c klucza go odgadn¹æ.
+=======
+UdaÅ‚o siÄ™ odszywrowaÄ‡ wszyskie ciÄ…gi w caÅ‚oÅ›ci, ale tylko z tego wzglÄ™du, Å¼e ich treÅ›Ä‡ jest dostÄ™pna w internecie na jednym z portali
+(https://zaufanatrzeciastrona.pl/post/jak-czechoslowacki-kontrwywiad-wegierskich-szpiegow-za-nos-wodzil/), przy pomocy google'a nie
+problem jest to znaleÅºÄ‡. Gdyby nie to, nie udaÅ‚o by siÄ™ rozszywrowaÄ‡ wszystkich ciÄ…gÃ³w, ze wzglÄ™du na ich dÅ‚ugoÅ›ci. 
+Problem pojawiÅ‚by siÄ™ w przypadku prÃ³by peÅ‚nej deszyfracji ciÄ…gu numer 10, gdyÅ¼ jest on najdÅ‚uÅ¼szy i nie jesteÅ›my w stanie nie uÅ¼ywajÄ…c klucza go odgadnÄ…Ä‡.
+>>>>>>> origin/master
