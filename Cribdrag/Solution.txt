@@ -1,4 +1,8 @@
 Odszywrowana treœæ dodatkowego ci¹gu: 
 Czesi zmontowali wielk¹ operacjê. Nie widzieli, jak wygl¹da transport poczty.
 
-Uda³o siê odszywrowaæ wszyskie ci¹gi w ca³oœci, ale tylko z tego wzglêdu, ¿e ich treœæ jest dostêpna w internecie na jednym z portali (https://zaufanatrzeciastrona.pl/post/jak-czechoslowacki-kontrwywiad-wegierskich-szpiegow-za-nos-wodzil/), przy pomocy google'a nie problem jest to znaleŸæ. Gdyby nie to, nie uda³o by siê rozszywrowaæ wszystkich ci¹gów, ze wzglêdu na ich d³ugoœci. Problem pojawi³by siê w przypadku próby pe³nej deszyfracji ci¹gu numer 10, gdy¿ jest on najd³u¿szy i nie jesteœmy w stanie nie u¿ywaj¹c klucza go odgadn¹æ.
+Uda³o siê odszywrowaæ wszyskie ci¹gi w ca³oœci, ale tylko z tego wzglêdu, ¿e ich treœæ jest dostêpna 
+w internecie na jednym z portali(https://zaufanatrzeciastrona.pl/post/jak-czechoslowacki-kontrwywiad-wegierskich-szpiegow-za-nos-wodzil/), 
+przy pomocy google'a nie problem jest to znaleŸæ. Gdyby nie to, nie uda³o by siê rozszywrowaæ 
+wszystkich ci¹gów, ze wzglêdu na ich d³ugoœci. Problem pojawi³by siê w przypadku próby pe³nej 
+deszyfracji ci¹gu numer 10, gdy¿ jest on najd³u¿szy i nie jesteœmy w stanie nie u¿ywaj¹c klucza go odgadn¹æ.

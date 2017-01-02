@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #!/usr/bin/python
-import chunk
+
 def main():
     ciphertexts = ["56232e8cede71121d5b30365423401b094d57e59e982374d0f122ba50dc4587ec4436206874f21235a29667099d79e9e67052dfc8650fefdf865e867b99765ebc91bdb277b47663a5b4b",
 "5c769e79e7ef0f6fd2b903404d82f9bf8ec069bd0edb82bd551835a511c2566c8b52295adfabd9774c31c09a7a10df9d7d1d3ffb875eeab0b750459bb58a65f4c9169a1e675267325b16f9ee849d9732467de2ae9c81c78288a4156fba61a9ed94c751630dba651088673697259336e9b0",
@@ -30,29 +30,34 @@ def main():
     s2 = ciphertexts[10].decode('hex')
     
     s3 = stringxor(s1, s2)
-
     s3_len = len(s3)
     display_cribtext = "*" * s3_len
     
     print s3.encode('hex')
-    crib = ''
-  
-    while (crib != 'end'):
+    answer = ''
+    
+    
+    while (answer != 'end'):
+        results = []
         crib = raw_input("Enter Crib:>")
         crib_len = len(crib)
         for i in range(len(s3)):
             text = s3[i:]
             print ("\n[%d]")%i
-            print ("%s")%stringxor(text,crib)
-        answer = raw_input("Please enter the correct position of message, 'brak' if text isn't exists or 'end' to quit") 
+            message = stringxor(text,crib)
+            results.append(message)
+            print ("%s")%message
+            
+        answer = raw_input("Please enter the correct position of message, 'brak' if text isn't exists or 'end' to quit: ") 
         
         if(answer == 'end'):
             print "Your message is:" + display_cribtext
-        elif (answer =='brak')
+        elif (answer =='brak'):
             print("Without changes")
         else:
-            display_cribtext = display_cribtext[:answer] + crib + display_cribtext[answer+cirb_len:]
+            answer = int(answer)
+            print ("%s")%results[answer]
+            display_cribtext = display_cribtext[:answer] + results[answer] + display_cribtext[answer+crib_len:]
             wrapped(display_cribtext)
-            
 
 main()
