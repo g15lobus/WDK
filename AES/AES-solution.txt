@@ -1,0 +1,40 @@
+1. AES ECB
+Rozszywrowana wiadomość: 
+Bit-Flipping jest popularnym atakiem na blokowe algorytmy szyfrowania w trybie CBC (ang. Cipher Block Chaining), wiązania bloków zaszyfrowanych. W wielu przypadkach prowadzi do przejęcia kont innych użytkowników (często administracyjnych), a w skrajnych przypadkach – nawet do zdalnego wykonywania kodu.
+
+Do odszywrowania: 
+KeyECB:
+5a14a5d3ba5b367157daf1a931aa646d
+MessageECB:
+28bfbba8f0e3ad88a9e0173ef5a09e400898895c81e487c2a67ff4cf7c38d7aae82d90c64e636bcf0d9c85c201ef9fcc6e9347398951275cc06cea82b4862f17411c3cf6fe7a77419f99473d5c16723a14ffd81fd2689e01c61fd8d7009fc4ac2f80b662093216c921c46a054079c652530f8b8ed17debd5a591fb9a89816234107c89a3372634db738558124acabc1d03c418da38134a9393fd3dc8fc315ccb83c5f13e421a2893dcb713d0ddcf7e9e541df7af50a4f350f3978dc03b80fcc7f67708d3cacb7773bf2c436556e4126b1d80cc200e08d827360ccac85992eb25c22d4cf7de00af1583eb4e3eba361aa4d1943211e5998d606a4b8c85c70e4e75
+
+2. AES CBC
+Rozszywrowana wiadomość: 
+Padding Oracle to atak pozwalający na wyłuskanie tekstu jawnego z zaszyfrowanych danych bez znajomości klucza szyfrującego, a także – bez konieczności wyszukiwania błędów w samym algorytmie szyfrującym.
+
+KeyECB:
+4ac77a572f3d525b85852818fd0fed98
+IV:
+88ea3e95b9444fcc3c7480f46ced78b6
+MessageCBC:
+b95df0cbe40e7e9d58e6306365a0eaf507c98e1deed633d6f98becba9776a56af7885018798998732ff892234ca5f8df767e36905c9e8d650eb73cc0cdc63dd3755a11929172930c37c557fbb0ab47199ebf6ff34e2548ee7986b2a1700e4d73e03679c272fb5fc5bf88b40f2246c44b005c7d139c5e3691c7103a5ced2b91a462aa2ca5d5a03f333a413e9b2321170943a221b217a6d8fbac9bcb8da1a603eb091e1ddf54a9c6b18f065c40a1e63519
+
+3. AES CTR
+Rozszywrowana wiadomość:
+Prędzej czy później komputery kwantowe o możliwościach znacznie przewyższających tradycyjne maszyny obliczeniowe wejdą do powszechnego użytku. Będzie to moment, w którym cała gama stosowanych obecnie algorytmów szyfrowania straci swoje znaczenie.
+
+KeyCTR:
+d9624197072c13f99c9f49e9e44c33b5
+IV:
+546dbfde91978ef4e68f9274133d0d12
+MessageCTR:
+11f7627201a0506ac1674d1cd90bb43773987f28b5f38a0addb24ea49975025279063c851d669a2fc076f76f23bb9846c880ea0d408191fcf1b2c662daec8779656c3aaaa7059533429a1ebf53fec9122b70dfe2a35f06a9836602e3a199fd8df806b90ff16d28f3302dd8316865ae083e2d69a942a73acb31aee983265faa0ce5b0bafef0c40f8dc8009e64a38749a911f8e80b38b0c4c0f47536b65da4cb9425ee283840ff8d8db726c5d90d9efc805c5b9eb72dc485751bbb648d3f0431d475b1af4262eb83e4d2a01703ab4d9cddfe1c7ea05a56658393b10a3557389b68577c0b33f45546c395e3765c96adeb50cd88f2c0b6835d7c168c59d32b2cca0370752ebb48c3c749eff98c1c6934b48fb50f699256c13010ff8ccac413cf33ecce4b45372c9f6b5ba2bca21ae602e806c915d27bbd9f4d0232b5e92df5f101d59515a75d2fd107
+
+
+Odpowiedzi na pytania:
+1. Bezpiecznymi trybami wiązania bloków w algorytmie AES są [rekomendacja zawarta w publikacji NIST - SP 800-38A]: Electronic Codebok(ECB), Cipher Block Chaining(CBC), Cipher Feedback(CFB), Output Feedback(OFB), a także Counter(CTR).
+2. Przyczyną braku wspierania niektórych wersji AES'a w poszczególnych bibliotekach, mogą być znalezione przez twórcówch danych bibliotek podatności niektórych metod lub też skoncentrowanie się na rozwoju wybranych metod, tak aby ograniczyć ryzyko wystąpienia jakichkolwiek luk.
+3. Powodem tego jest fakt, iż niektóre kraje(jest ich co raz mniej) nakładają ograniczenia w zakresie dozwolonej długości klucza używanego do szyfrowania aplikacji, dlatego też java blokuje użycie dłuższego klucza.
+4. Klucze do algorytmów symetrycznych można przechowywać bezpiecznie na kilka sposobów m.in. używając kart, tokenów czy tez w zaszyfrowanych plików używających haseł. 
+
+6. Moim zdaniem nie da się wybrać opcji, która będzie spełniała wszystkie wymogi.
