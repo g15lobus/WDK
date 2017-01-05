@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*- 
 from Crypto.PublicKey import RSA
 from Crypto import Random
-from Crypto.PublicKey.RSA import importKey
 
 #generate key pair: 
 random_gen = Random.new().read
