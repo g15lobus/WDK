@@ -1,0 +1,1 @@
+Wybra³em 2048 bajtowy rozmiar klucza, ze wzglêdu na to, ¿e czêœæ hardware'u nie obs³uguje d³u¿szych rozmiarów klucza ni¿ 2048, a jednoczeœnie taki rozmiar jest bezpieczny i przyjêty jako powszechnie obowi¹zuj¹cy w zastosowaniach wojskowych. Zapewnia on "szybkie" szyfrowanie, z odpowiednim poziomem bezpieczeñstwa
