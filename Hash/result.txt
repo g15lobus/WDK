@@ -29,3 +29,5 @@ md5deep rozne:
 md5deep podobne:
 1. 857f5dbcad7f8e57a5fba4e85a88fb03
 2. 27237210c52f6ca53a57d36b6d456afb
+
+Jak widaæ powy¿ej funkcje skrótu zarówno dla plików podobnych, jak i zupe³nie ró¿nych w przypadku MD5, SHA256 jak i md5deep generuje znacz¹co ró¿ni¹ce siê wyniki, natomiast skróty wygenerowane z funkcji ssdeep s¹ bardzo podobne. 
